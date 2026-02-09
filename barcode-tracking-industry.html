@@ -1,0 +1,568 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Fast and Accurate Production Tracking with Barcode Reading Systems in Industry | VercosAI Digital Transformation</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <script src="https://kit.fontawesome.com/607e4879ac.js" crossorigin="anonymous"></script>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top ">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <a href="index.html" class="navbar-brand">
+                    <img src="img/logo.svg" alt="logo">
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link ">Home</a>
+                        <div class="nav-item dropdown">
+                            <a style="cursor:pointer" class="nav-link dropdown-toggle"
+                                data-bs-toggle="dropdown">Solutions</a>
+                            <div class="dropdown-menu bg-primary mt-2">
+                                <a href="packaging.html" class="dropdown-item">Packaging</a>
+                                <a href="erp-integration.html" class="dropdown-item">ERP Integration</a>
+                                <a href="bottling.html" class="dropdown-item">Bottling</a>
+                                <a href="fmcg.html" class="dropdown-item">FMCG</a>
+                                <a href="line-tracking.html" class="dropdown-item">Line Tracking</a>
+                                <a href="safety.html" class="dropdown-item">Safety</a>
+                            </div>
+                        </div>
+                        <a href="capabilities.html" class="nav-item nav-link">Capabilities</a>
+                        <a href="about.html" class="nav-item nav-link">About Us</a>
+                        <a href="blog.html" class="nav-item nav-link active">Blog</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="https://vercos.ai/endustride-barkod-okuma-sistemleri-hizli-ve-dogru-uretim-takibi.html" class="lang nav-item nav-link"><i
+                                class="fa-solid fa-globe"></i> TR</a>
+                    </div>
+
+                </div>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        var lastScrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+                        // Sayfa içinde herhangi bir yere tıklandığında çalışacak kod
+                        document.addEventListener("click", function (event) {
+                            var clickover = event.target;
+                            var navbarCollapse = document.querySelector("#navbarCollapse");
+                            var isOpened = navbarCollapse.classList.contains("show"); // Bootstrap 5'te "show" class'ı kullanılıyor
+                            var isNavbarToggle = clickover.closest(".navbar-toggler");
+                            var isDropdownToggle = clickover.closest(".dropdown-toggle"); // Dropdown menüsü açma butonunu kontrol et
+                            var isDropdownMenu = clickover.closest(".dropdown-menu"); // Dropdown menüsünü kontrol et
+
+                            // Navbar sadece dropdown ve navbar-toggler dışındaki alanlara tıklandığında kapanacak
+                            if (isOpened && !isNavbarToggle && !isDropdownMenu && !isDropdownToggle) {
+                                document.querySelector("button.navbar-toggler").click();
+                                // Sayfa pozisyonunu sıfırla
+                                lastScrollPosition = window.scrollY || document.documentElement.scrollTop;
+                            }
+                        });
+
+                        // Dropdown'un kapanmaması için varsayılan kapanma davranışını engelle
+                        var dropdowns = document.querySelectorAll('.dropdown-menu');
+                        dropdowns.forEach(function (dropdown) {
+                            dropdown.addEventListener('click', function (event) {
+                                event.stopPropagation(); // Tıklama olayı diğer elemanlara yayılmasın
+                            });
+                        });
+
+                        // Sayfa kaydırıldığında navbar'ı kapat, ancak son pozisyondan itibaren 100px kaydırılınca
+                        window.addEventListener('scroll', function () {
+                            var navbarCollapse = document.querySelector("#navbarCollapse");
+                            var isOpened = navbarCollapse.classList.contains("show");
+
+                            // Mevcut kaydırma pozisyonunu kontrol et
+                            var currentScrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+                            // Eğer navbar açıksa ve son kaydedilen pozisyondan 100px fazla kaydırılmışsa navbar'ı kapat
+                            if (isOpened && Math.abs(currentScrollPosition - lastScrollPosition) > 200) {
+                                document.querySelector("button.navbar-toggler").click();
+                                // Yeni pozisyonu kaydet
+                                lastScrollPosition = currentScrollPosition;
+                            }
+                        });
+                    });
+
+
+
+
+
+
+                </script>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+    <div class="container-fluid pt-5 bg-darkorbit hero-header">
+        <div class="container pt-5">
+            <div class="row g-5 pt-5">
+                <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
+                    <h3 style="color: #fff;">Fast and Accurate Production Tracking with Barcode Reading Systems in Industry
+                    </h3>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center justify-content-lg-start mb-0">
+                            <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="#">Recent publication</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page"><b>Fast and Ac...</b></li>
+                        </ol>
+                        <script>
+                            document.addEventListener("DOMContentLoaded", function () {
+                                var lastScrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+                                // Sayfa içinde herhangi bir yere tıklandığında çalışacak kod
+                                document.addEventListener("click", function (event) {
+                                    var clickover = event.target;
+                                    var navbarCollapse = document.querySelector("#navbarCollapse");
+                                    var isOpened = navbarCollapse.classList.contains("show"); // Bootstrap 5'te "show" class'ı kullanılıyor
+                                    var isNavbarToggle = clickover.closest(".navbar-toggler");
+                                    var isDropdownToggle = clickover.closest(".dropdown-toggle"); // Dropdown menüsü açma butonunu kontrol et
+                                    var isDropdownMenu = clickover.closest(".dropdown-menu"); // Dropdown menüsünü kontrol et
+
+                                    // Navbar sadece dropdown ve navbar-toggler dışındaki alanlara tıklandığında kapanacak
+                                    if (isOpened && !isNavbarToggle && !isDropdownMenu && !isDropdownToggle) {
+                                        document.querySelector("button.navbar-toggler").click();
+                                        // Sayfa pozisyonunu sıfırla
+                                        lastScrollPosition = window.scrollY || document.documentElement.scrollTop;
+                                    }
+                                });
+
+                                // Dropdown'un kapanmaması için varsayılan kapanma davranışını engelle
+                                var dropdowns = document.querySelectorAll('.dropdown-menu');
+                                dropdowns.forEach(function (dropdown) {
+                                    dropdown.addEventListener('click', function (event) {
+                                        event.stopPropagation(); // Tıklama olayı diğer elemanlara yayılmasın
+                                    });
+                                });
+
+                                // Sayfa kaydırıldığında navbar'ı kapat, ancak son pozisyondan itibaren 100px kaydırılınca
+                                window.addEventListener('scroll', function () {
+                                    var navbarCollapse = document.querySelector("#navbarCollapse");
+                                    var isOpened = navbarCollapse.classList.contains("show");
+
+                                    // Mevcut kaydırma pozisyonunu kontrol et
+                                    var currentScrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+                                    // Eğer navbar açıksa ve son kaydedilen pozisyondan 100px fazla kaydırılmışsa navbar'ı kapat
+                                    if (isOpened && Math.abs(currentScrollPosition - lastScrollPosition) > 200) {
+                                        document.querySelector("button.navbar-toggler").click();
+                                        // Yeni pozisyonu kaydet
+                                        lastScrollPosition = currentScrollPosition;
+                                    }
+                                });
+                            });
+
+
+
+
+
+
+                        </script>
+                    </nav>
+                    <div class="views-container">
+                        <span style="padding: 10px;" class="pill-skill rounded-pill text-center">
+                            <i class="fa fa-eye"></i> 966 Views
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+    <section style="padding-top: 50px; background: #27462c !important;" class="section bg-darkorbit">
+        <div class="container">
+
+            <div class="row blog-entries element-animate">
+
+                <div class="col-md-12 col-lg-8 main-content">
+
+                    <div class="post-content-body">
+                        <h4>15/07/2025</h4>
+
+
+                        <h4>Fast and Accurate Production Tracking with Barcode Reading Systems in Industry</h4>
+                        <p>
+                            In every sector, production speed and accuracy are of critical importance for gaining a competitive advantage and
+                            increasing customer satisfaction. In the industry, barcode reading systems offer incredible opportunities to maximize
+                            these two key factors. In this article, we will provide a wide range of information, from the basic functioning of
+                            barcode technology to examples of sectoral applications, from best practices tailored to the needs of the industry to
+                            frequently asked questions. By examining the effects of barcode systems on production processes in detail, we will
+                            reveal the transformative impact of this technology on businesses. In particular, we will discuss the role it plays in
+                            different sectors and ways to increase its effectiveness.
+                        </p>
+                        <img style="width: 100%; margin-bottom: 55px; border-radius: 10px;" src="/2007/Endüstride Barkod Okuma Sistemleri Hızlı ve Doğru Üretim Takibi.png" alt="">
+
+                        <h4>The Importance and Core Functionality of Barcode Reading Systems in Industry</h4>
+<p>
+Barcode reading systems play a critical role in improving efficiency and accuracy in industrial production processes. Barcode technology enables fast identification and tracking of products and materials, helping businesses save time and reduce costs while minimizing error rates. These systems work by having optical sensors read the barcodes and transferring the data to computer systems.
+</p>
+<p>
+In the manufacturing sector, barcode systems are used in various stages such as raw material intake, assembly line operations, final inspection, and shipment. Barcodes contain information such as product type, source, and production date, which is integrated into databases to simplify production tracking. Automatic barcode scanning eliminates manual errors and accelerates the process.
+</p>
+<p>
+Barcode systems also play a major role in warehouse management. Classifying products, placing them, and updating their locations can easily be done with barcodes. This enables quick location of the correct product and ensures efficient use of workforce.
+</p>
+<p>
+Industrial barcode solutions ensure control and efficiency at every stage of production. Technologies like fast barcode scanning and automatic barcode recognition advance operational processes.
+</p>
+
+<h4>The Impact of Barcode Systems on Production Processes</h4>
+<p>
+Barcode reading systems make production tracking processes more efficient. Through integration, the entire process from raw materials to shipment can be tracked without error. Automatic data collection reduces human error and increases operational efficiency.
+</p>
+<p>
+Automatic barcode recognition technology works in integration with production line machines, enabling immediate product identification. This benefits both production speed and product transition accuracy, preventing incorrect shipments and improving customer satisfaction.
+</p>
+<p>
+Barcode systems work alongside production automation strategies, allowing for more accurate production planning. Especially during periods of high demand, barcode verification and fast scanning systems support uninterrupted production.
+</p>
+<p>
+Industrial barcode solutions maximize efficiency and accuracy while offering businesses cost advantages. The development of these systems is a direct reflection of technological advancements.
+</p>
+
+<h4>Use of Barcode Reading Technologies in Different Industries</h4>
+<p>
+Barcode systems are a fundamental technology in many industries for product management and traceability. Especially in areas like warehouse management and inventory tracking, they speed up processes and reduce errors.
+</p>
+<p>
+In the retail sector, fast barcode scanning accelerates checkout operations, increases customer satisfaction, and ensures more accurate sales records. In addition, product movements are tracked through barcodes, improving inventory management.
+</p>
+<p>
+In manufacturing, barcode systems speed up the process of passing products through serial production lines. Every stage from raw material processing to shipment becomes traceable, allowing early detection of bottlenecks.
+</p>
+<p>
+Automatic barcode recognition and verification systems have become smarter with technological advancements. These improvements not only bring speed and accuracy but also provide comprehensive solutions for complex manufacturing and logistics processes. Error rates drop, costs decrease, and overall industry efficiency increases.
+</p>
+
+<h4>Best Practices for Industrial Barcode Reading Systems</h4>
+<p>
+Barcode reading systems in industry are critical for monitoring and managing production processes. With proper installation and trained personnel, the system functions smoothly.
+</p>
+<p>
+Regular barcode verification reduces scanning errors and ensures error-free production. Integration with automation tools also increases processing speed.
+</p>
+<p>
+Automatic recognition and fast scanning technologies allow products to be quickly recorded. This ensures every product is traceable and reduces the risk of error.
+</p>
+<p>
+Finally, systems must be regularly updated and kept open to innovations. This ensures barcode systems remain efficient over time.
+</p>
+
+<h4>Frequently Asked Questions</h4>
+
+<p><strong>What problems do barcode reading systems solve in industry?</strong><br>
+They reduce errors in production processes, automate inventory tracking, and speed up logistics operations. They provide time and cost advantages.
+</p>
+
+<p><strong>What are the effects of barcode reading systems on the production process?</strong><br>
+They ensure production line traceability, reduce errors, and increase efficiency. Stock levels can be updated in real time.
+</p>
+
+<p><strong>How do barcode systems save time in industry?</strong><br>
+They collect data faster and more accurately than manual entry, resulting in significant time savings in production and inventory processes.
+</p>
+
+<p><strong>What technical infrastructure is needed to install barcode reading systems?</strong><br>
+Barcode scanners, data terminals, compatible software, and a strong network infrastructure are required.
+</p>
+
+<p><strong>Are barcode reading systems cost-effective for small businesses?</strong><br>
+Yes. When appropriately scaled systems are selected, efficiency gains can offset the initial investment in a short period.
+</p>
+
+<p><strong>How is the maintenance of barcode reading systems performed?</strong><br>
+Software updates and hardware checks should be conducted regularly. Proper maintenance ensures the system operates reliably and has a long lifespan.
+</p>
+
+<p><strong>How will barcode systems impact the future of industry?</strong><br>
+They will become smarter through integration with AI and machine learning, leading to maximum efficiency in industrial processes.
+</p>
+
+
+
+
+
+
+
+                    </div>
+
+
+                </div>
+
+                <!-- END main-content -->
+
+                <div class="col-md-12 col-lg-4 sidebar text-white">
+
+                    <!-- END sidebar-box -->
+                    <div class="sidebar-box sticky-effectox" style="max-height: 76vh; overflow: hidden;">
+                        <h3 class="heading text-white">Popular Posts</h3>
+                        <div class="post-entry-sidebar">
+
+                            <ul>
+                                <li>
+                                    <a
+                                        href="erp-integration-with-artificial-intelligence-how-to-increase-efficiency-in-your-business.html">
+                                        <div class=" wow fadeIn" data-wow-delay="0.3s">
+                                            <div class="case-item position-relative overflow-hidden rounded mb-2">
+                                                <img class="img-fluid"
+                                                    src="blog/ERP Integration with Artificial Intelligence How to Increase Efficiency in Your Business.jpg"
+                                                    alt="">
+                                                <a class="case-overlay text-decoration-none"
+                                                    href="erp-integration-with-artificial-intelligence-how-to-increase-efficiency-in-your-business.html">
+
+                                                    <h5 class="lh-base text-white mb-3">
+                                                        ERP Integration with Artificial Intelligence How to Increase
+                                                        Efficiency in Your Business
+                                                    </h5>
+                                                    <span class="btn btn-square btn-primary"><i
+                                                            class="fa fa-arrow-right"></i></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="packaging-sorting-and-error-detection-increase-efficiency-with-ai.html">
+                                        <div class=" wow fadeIn" data-wow-delay="0.3s">
+                                            <div class="case-item position-relative overflow-hidden rounded mb-2">
+                                                <img class="img-fluid"
+                                                    src="blog/Packaging Sorting and Error Detection Increase Efficiency with AI.jpg"
+                                                    alt="">
+                                                <a class="case-overlay text-decoration-none"
+                                                    href="packaging-sorting-and-error-detection-increase-efficiency-with-ai.html">
+
+                                                    <h5 class="lh-base text-white mb-3">
+                                                        Packaging Sorting and Error Detection Increase Efficiency with
+                                                        AI
+                                                    </h5>
+                                                    <span class="btn btn-square btn-primary"><i
+                                                            class="fa fa-arrow-right"></i></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- END sidebar-box -->
+
+                </div>
+                <!-- END sidebar -->
+                <div style="height: 100px;" class="cakinti"></div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+    <!-- Newsletter Start -->
+    <form action="https://formspree.io/f/mrbqbazd" method="POST" target="dummyframe"
+        class="container-fluid bg-darkorbit newsletter">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="display-none col-md-5 ps-lg-0 pt-5 pt-md-0 text-start wow fadeIn" data-wow-delay="0.3s">
+                    <img class="img-fluid" src="img/newsletter.png" alt="">
+                </div>
+                <div class="col-md-7  newsletter-text wow fadeIn" data-wow-delay="0.5s">
+                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3">Newsletter</div>
+                    <h1 class="text-white mb-4">Let's subscribe the newsletter</h1>
+                    <div class="position-relative w-100 mt-3 mb-2">
+                        <input name="email" class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="email"
+                            placeholder="Enter Your Email" style="height: 48px;">
+                        <button type="submit" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
+                                style="color: #395b40  !important;"
+                                class="fa fa-paper-plane text-primary fs-4"></i></button>
+                    </div>
+                    <small class="text-white-50">You accept our privacy policy by providing your email address.</small>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- Newsletter End -->
+    <script>
+        document.querySelector('form').addEventListener('submit', function (e) {
+            e.preventDefault(); // Formu otomatik göndermesin, biz kontrol edeceğiz.
+
+            // Formu manuel gönder
+            this.submit();
+
+            // Başarı mesajı oluştur
+            const successMessage = document.createElement('small');
+            successMessage.textContent = 'Thank you for subscribing!';
+            successMessage.style.color = '#ffffff';
+            successMessage.className = 'form-success-message';
+
+            // Eğer daha önce eklendiyse tekrar eklememesi için kontrol
+            if (!document.querySelector('.form-success-message')) {
+                this.querySelector('.newsletter-text').appendChild(successMessage);
+            }
+
+            // Inputu temizle
+            this.querySelector('input[name="email"]').value = '';
+
+            // 20 saniye sonra mesajı kaldır
+            setTimeout(() => {
+                successMessage.remove();
+            }, 20000); // 20.000 ms = 20 saniye
+        });
+    </script>
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-primarybit text-white-50 footer pt-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                    <a href="index.html" class="d-inline-block mb-3">
+                        <img style="width: 200px;" src="img/logo.svg" alt="logo">
+                    </a>
+
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                    <h5 class="text-white mb-4">Popular Link</h5>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="privacy.html">Privacy Policy</a>
+                    <a class="btn btn-link" href="terms.html">Terms & Condition</a>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+                    <h5 class="text-white mb-4">Our Services</h5>
+                    <a class="btn btn-link" href="bottling.html">Bottling</a>
+                    <a class="btn btn-link" href="erp-integration.html">ERP Integration</a>
+                    <a class="btn btn-link" href="packaging.html">Packaging</a>
+                    <a class="btn btn-link" href="fmcg.html">FMCG</a>
+                    <a class="btn btn-link" href="line-tracking.html">Line Tracking</a>
+                    <a class="btn btn-link" href="safety.html">Safety</a>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+                    <h5 class="text-white mb-4">Get In Touch</h5>
+                    <p><i style="width: 10px;" class="fa fa-map-marker-alt me-3"></i>Ordu, TURKEY</p>
+                    <p><a style="color:#ffffff80; text-decoration:none" href="tel:+905464208480"><i style="width: 10px;"
+                                class="fa fa-phone me-3"></i>0 546 420 84 80</a></p>
+
+                    <p><a style="color:#ffffff80; text-decoration:none" href="mailto:hello@vercosai.com"><i
+                                style="width: 10px;" class="fa fa-envelope me-3"></i>hello@vercosai.com</a></p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href="https://x.com/vercos_ai"><i
+                                class="fab fa-x-twitter"></i></a>
+
+                        <a class="btn btn-outline-light btn-social" href="https://youtube.com/@vercosai"><i
+                                class="fab fa-youtube"></i></a>
+
+                        <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/company/vercosai/"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container wow fadeIn" data-wow-delay="0.1s">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="https://vercos.ai/en">VercosAI</a>, All Right Reserved.
+
+
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="https://vercos.ai/en">Home</a>
+
+                            <a href="https://vercos.ai/en/contact.html">Help</a>
+                            <a href="https://vercos.ai/en/FAQs.html">FAQs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-dark btn-lg back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
