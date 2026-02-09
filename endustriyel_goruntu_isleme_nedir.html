@@ -1,0 +1,540 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Endüstriyel Görüntü İşleme Nedir? | VercosAI Dijital Dönüşüm </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <script src="https://kit.fontawesome.com/607e4879ac.js" crossorigin="anonymous"></script>
+    <link href="css/style.css" rel="stylesheet">
+<meta http-equiv="Content-Language" content="tr"></head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Yükleniyor... </span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top ">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <a href="index.html" class="navbar-brand">
+                    <img  src="img/logo.svg" alt="logo">
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link">Ana Sayfa</a>
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " data-bs-toggle="dropdown">Çözümlerimiz</a>
+                            <div class="dropdown-menu bg-primary mt-2">
+                                <a href="Ambalajlama.html" class="dropdown-item">Ambalajlama</a>
+                                <a href="erp-entegrasyonu.html" class="dropdown-item">ERP Entegrasyonu</a>
+                                <a href="siseleme.html" class="dropdown-item">Şişeleme</a>
+                                <a href="htm.html" class="dropdown-item">Hızlı Tüketim Ürünleri</a>
+                                <a href="hat-takibi.html" class="dropdown-item">Hat Takibi</a>
+                                <a href="isg.html" class="dropdown-item">İş Güvenliği</a>
+                            </div>
+                        </div>
+                         <a href="yetenekler.html" class="nav-item nav-link">Yeteneklerimiz</a>
+                        <a href="hakkimizda.html" class="nav-item nav-link">Hakkımızda</a>
+                        <a href="blog.html" class="nav-item nav-link active">Blog </a>
+                        <a href="iletisim.html" class="nav-item nav-link">İletişim</a>
+                        <a href="https://vercos.ai/en/what-is-industrial-image-processing.html" class="lang nav-item nav-link"><i class="fa-solid fa-globe"></i> EN</a>
+                    </div>
+                    
+                </div>
+            <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+    var lastScrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+    // Sayfa içinde herhangi bir yere tıklandığında çalışacak kod
+    document.addEventListener("click", function (event) {
+        var clickover = event.target;
+        var navbarCollapse = document.querySelector("#navbarCollapse");
+        var isOpened = navbarCollapse.classList.contains("show"); // Bootstrap 5'te "show" class'ı kullanılıyor
+        var isNavbarToggle = clickover.closest(".navbar-toggler");
+        var isDropdownToggle = clickover.closest(".dropdown-toggle"); // Dropdown menüsü açma butonunu kontrol et
+        var isDropdownMenu = clickover.closest(".dropdown-menu"); // Dropdown menüsünü kontrol et
+
+        // Navbar sadece dropdown ve navbar-toggler dışındaki alanlara tıklandığında kapanacak
+        if (isOpened && !isNavbarToggle && !isDropdownMenu && !isDropdownToggle) {
+            document.querySelector("button.navbar-toggler").click();
+            // Sayfa pozisyonunu sıfırla
+            lastScrollPosition = window.scrollY || document.documentElement.scrollTop;
+        }
+    });
+
+    // Dropdown'un kapanmaması için varsayılan kapanma davranışını engelle
+    var dropdowns = document.querySelectorAll('.dropdown-menu');
+    dropdowns.forEach(function (dropdown) {
+        dropdown.addEventListener('click', function (event) {
+            event.stopPropagation(); // Tıklama olayı diğer elemanlara yayılmasın
+        });
+    });
+
+    // Sayfa kaydırıldığında navbar'ı kapat, ancak son pozisyondan itibaren 100px kaydırılınca
+    window.addEventListener('scroll', function () {
+        var navbarCollapse = document.querySelector("#navbarCollapse");
+        var isOpened = navbarCollapse.classList.contains("show");
+
+        // Mevcut kaydırma pozisyonunu kontrol et
+        var currentScrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+        // Eğer navbar açıksa ve son kaydedilen pozisyondan 100px fazla kaydırılmışsa navbar'ı kapat
+        if (isOpened && Math.abs(currentScrollPosition - lastScrollPosition) > 200) {
+            document.querySelector("button.navbar-toggler").click();
+            // Yeni pozisyonu kaydet
+            lastScrollPosition = currentScrollPosition;
+        }
+    });
+});
+
+
+
+
+
+
+                </script>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+    <div class="container-fluid pt-5 bg-darkorbit hero-header">
+        <div class="container pt-5">
+            <div class="row g-5 pt-5">
+                <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
+                   
+                    <h3 style="color: #fff;">Endüstriyel Görüntü İşleme Nedir? </h3>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center justify-content-lg-start mb-0">
+                            <li class="breadcrumb-item"><a class="text-white" href="index.html">Ana Sayfa </a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="#">Blog </a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="#">Endüstriyel Görüntü İşleme Nedir?</a></li>
+                    
+                        </ol>
+                    <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+    var lastScrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+    // Sayfa içinde herhangi bir yere tıklandığında çalışacak kod
+    document.addEventListener("click", function (event) {
+        var clickover = event.target;
+        var navbarCollapse = document.querySelector("#navbarCollapse");
+        var isOpened = navbarCollapse.classList.contains("show"); // Bootstrap 5'te "show" class'ı kullanılıyor
+        var isNavbarToggle = clickover.closest(".navbar-toggler");
+        var isDropdownToggle = clickover.closest(".dropdown-toggle"); // Dropdown menüsü açma butonunu kontrol et
+        var isDropdownMenu = clickover.closest(".dropdown-menu"); // Dropdown menüsünü kontrol et
+
+        // Navbar sadece dropdown ve navbar-toggler dışındaki alanlara tıklandığında kapanacak
+        if (isOpened && !isNavbarToggle && !isDropdownMenu && !isDropdownToggle) {
+            document.querySelector("button.navbar-toggler").click();
+            // Sayfa pozisyonunu sıfırla
+            lastScrollPosition = window.scrollY || document.documentElement.scrollTop;
+        }
+    });
+
+    // Dropdown'un kapanmaması için varsayılan kapanma davranışını engelle
+    var dropdowns = document.querySelectorAll('.dropdown-menu');
+    dropdowns.forEach(function (dropdown) {
+        dropdown.addEventListener('click', function (event) {
+            event.stopPropagation(); // Tıklama olayı diğer elemanlara yayılmasın
+        });
+    });
+
+    // Sayfa kaydırıldığında navbar'ı kapat, ancak son pozisyondan itibaren 100px kaydırılınca
+    window.addEventListener('scroll', function () {
+        var navbarCollapse = document.querySelector("#navbarCollapse");
+        var isOpened = navbarCollapse.classList.contains("show");
+
+        // Mevcut kaydırma pozisyonunu kontrol et
+        var currentScrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+        // Eğer navbar açıksa ve son kaydedilen pozisyondan 100px fazla kaydırılmışsa navbar'ı kapat
+        if (isOpened && Math.abs(currentScrollPosition - lastScrollPosition) > 200) {
+            document.querySelector("button.navbar-toggler").click();
+            // Yeni pozisyonu kaydet
+            lastScrollPosition = currentScrollPosition;
+        }
+    });
+});
+
+
+
+
+
+
+                </script>
+            </nav>
+                    <div class="views-container">
+                        <span style="padding: 10px;" class="pill-skill rounded-pill text-center">
+                        <i class="fa fa-eye"></i> 4.2bin görüntüleme  </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+<section style="padding-top: 50px; background: #27462c !important;" class="section bg-darkorbit">
+    <div class="container">
+
+        <div class="row blog-entries element-animate">
+
+            <div class="col-md-12 col-lg-8 main-content">
+
+                <div class="post-content-body">
+                    <h4>26/01/2026</h4>
+
+                    <h4>Endüstriyel Görüntü İşleme Nedir?</h4>
+                    <p>
+                        Endüstriyel görüntü işleme, üretim süreçlerinde otomasyonu artıran kritik bir teknolojidir. Bu teknoloji, üretim
+                        hattında ürünlerin hatasız bir şekilde kontrol edilmesini ve kalitenin korunmasını sağlar. Endüstriyel görüntü işlemenin
+                        üretim hattındaki rolü, kameralar ve görüntü sensörleri aracılığıyla ürünlerin anlık olarak incelenmesini içerir. Üretim
+                        sürecindeki en küçük detayları bile algılayabilen bu sistem, insan müdahalesini azaltarak hatalardan doğan kayıpları
+                        minimize eder. Kalite kontrol sistemlerinde ise endüstriyel görüntü işleme, hassas ölçümler ve hata ayıklamaları ile
+                        yüksek standartların korunmasına yardımcı olur. Bu tür bir teknoloji, otomotivden elektronik cihazlara kadar geniş bir
+                        yelpazede uygulanabilir.
+                    </p>
+                    <img style="width: 100%; margin-bottom: 55px; border-radius: 10px;" src="09022026/endustriyel_goruntu_isleme.png" alt="">
+                   
+                    <h4>Endüstriyel Görüntü İşleme Nedir?</h4>
+                    <p>Endüstriyel görüntü işleme, üretim süreçlerinin otomatikleştirilmesi ve daha verimli hale getirilmesi için kritik bir
+                        rol oynar. Bu teknoloji, endüstriyel otomasyon sistemlerinin ayrılmaz bir parçasıdır ve makine görüsü çözümleri ile
+                        birleştiğinde fabrikalardaki kalite kontrol, hata tespiti ve süreç iyileştirmeleri gibi alanlarda büyük avantajlar
+                        sunar. Görüntü işleme teknolojileri, işletmelerin hızlı ve doğru kararlar almasına olanak tanır ve böylece
+                        rekabetçiliklerini artırır. Bu nedenle, endüstriyel görüntü işleme, modern üretim tesislerinin vazgeçilmez bir
+                        unsuru haline gelmiştir.</p>
+                    
+                    <h4>Endüstriyel Görüntü İşlemenin Kullanım Alanları</h4>
+                    <p>Kalite kontrol süreçlerinde hata tespiti, ürün veya parça tanımlama ve sınıflandırma, robotik sistemi yönlendirme ve
+                        kontrol, ambalaj ve etiketleme doğruluğu sağlama, üretim hatlarındaki hız ve verimliliği artırma, güvenlik
+                        sistemlerinin optimizasyonu, lojistik ve depo otomasyonu gibi alanlar temel kullanım sahalarıdır.</p>
+                    <p>Endüstriyel görüntü işleminin yenilikçi yapısı, işletmelere süreçleri daha etkili bir şekilde yönetme yeteneği
+                        sağlar. Görsel verilerin gerçek zamanlı analizi ile hatlar üzerinde hızlı aksiyon alınabilir ve böylece hatalar
+                        minimize edilir. Ayrıca, bu teknoloji ile verimlilik artmakta ve maliyetler azaltılmaktadır. Endüstriyel otomasyonun
+                        önemli bir parçası olan bu sistemler, yalnızca üretim hattında değil, lojistik ve depo otomasyonunda da önemli
+                        kolaylıklar sağlar. Makine görüsü çözümleri ile birleştirilen bu süreçler, işletmelere rekabet avantajı sağlamakta
+                        ve endüstriyel yenilikleri daha ileri taşımaktadır.</p>
+                    
+                    <h4>Endüstriyel Görüntü İşlemenin Üretim Hattındaki Rolü</h4>
+                    <p>Endüstriyel görüntü işleme, modern üretim hatlarında giderek daha fazla önem kazanmaktadır. Teknolojinin gelişmesiyle
+                        birlikte, üretim süreçlerinde daha yüksek hassasiyet ve hız gereksinimi ortaya çıkmıştır. Endüstriyel görüntü işleme
+                        teknolojileri, bu gereksinimleri karşılayarak kalite kontrol, hata tespiti ve ürün standartlarına uygunluğu sağlama
+                        konusunda kilit bir rol oynamaktadır.</p>
+                    
+                    <h4>Üretim Süreçlerinde Görüntü İşleme</h4>
+                    <p>Üretim süreçlerinde görüntü işleme, çeşitli endüstrilerde geniş bir uygulama alanına sahiptir. Özellikle otomotiv,
+                        elektronik ve gıda sektörleri, endüstriyel görüntü işleme teknolojileri sayesinde ürünlerinin kalitesini ve
+                        güvenilirliğini artırmaktadır. Bu teknoloji, hatalı ürünlerin hızlı bir şekilde tespit edilmesi ve ayrılması ile
+                        üretim hattı denetimi süreçlerini iyileştirmektedir. Ayrıca, üretim hatlarındaki robotik sistemlerle entegre
+                        çalışarak, insan gücünü minimize eder ve işletmelerin verimliliğini artırır.</p>
+                    
+                    <h4>Üretim Hattı Denetimi Yöntemleri</h4>
+                    <p>Üretim hattı denetiminde kullanılan yöntemler, işleme sürelerini kısaltarak maliyetleri düşürür ve ürün kalitesini
+                        artırır. Görüntü işleme sistemleri, kameralar ve yapay zekâ algoritmaları ile çalışır ve bu sistemler hatalı
+                        üretimlere hızlı tepkiler vererek hataları minimize eder. Aşağıda, üretim hattı denetimi için izlenmesi gereken
+                        adımlar listelenmiştir.</p>
+                    
+                    <h4>Üretim Hattı Denetimi İçin Adımlar</h4>
+                    <p>Görüntüleme sisteminin kurulumunu ve kalibrasyonunu gerçekleştirin. Yapay zekâ algoritmalarını hatalı ürünleri tespit
+                        edecek şekilde yapılandırın. Görüntü işleme cihazlarını üretim hattına entegre edin. Görsel verilerin analizini
+                        yaparak sistem performansını izleyin. Üretim sürecinde belirlenen hataları barındıran ürünleri otomatik olarak
+                        ayırın. Raporlama ve geri bildirim mekanizmalarını kurarak sürekli iyileştirme sağlayın.</p>
+                    <p>Endüstriyel görüntü işleme sistemlerinin üretim hattı denetimindeki rolü, işletme verimliliğini artırmak ve
+                        işletmenin rekabet gücünü yükseltmek açısından öncelikli hale gelmiştir. Bu sistemler, insan kaynaklı hataları
+                        azaltarak ve proses verimliliğini güçlü bir şekilde artırarak üretim süreçlerinde devrim yaratmaktadır.</p>
+                    
+                    <h4>Kalite Kontrol Sistemlerinde Görüntü İşleme</h4>
+                    <p>Endüstriyel görüntü işleme, kalite kontrol sistemlerinde kritik bir rol oynamaktadır. Üretim hattındaki bu yenilikçi
+                        teknoloji, ürün kalitesinin sürekliliğini sağlamak amacıyla çeşitli otomatik süreçler kullanır. Bu süreçler,
+                        üretimde yapay zekâ ile entegre edilerek hem maliyetleri düşürür hem de işletmelerin pazar rekabetini artırır.
+                        Endüstriyel görüntü işleme, farklı sektörlerdeki üretim süreçlerini otomatikleştirerek insan hatalarını minimize
+                        eder.</p>
+                    
+                    <h4>Kalite Kontrol Sistemlerinin Avantajları</h4>
+                    <p>Zaman ve maliyet tasarrufu sağlar. Üretim süreçlerinde sürekli ve doğru izleme yapar. Yüksek hassasiyet ile hata
+                        tespit eder. İnsan hatasını en aza indirir. Verimliliği artırarak rekabet gücünü yükseltir. Çevresel etkileri
+                        azaltmak için optimize çözümler sunar. Entegre edilebilirliği sayesinde farklı sektörlere adapte olabilir.</p>
+                    <p>Hızlı ve hassas ölçüm, endüstriyel görüntü işleme ile birleştiğinde, kalite kontrol süreçlerinde devrim
+                        yaratmaktadır. Bu sistemler, milisaniyeler içinde yüksek hassasiyetle ölçüm yaparak her bir ürünün kaliteli olduğunu
+                        garanti eder. Özellikle, otomotiv, elektronik ve gıda sektörlerinde, hızlı veri işleme yetenekleri üretim
+                        verimliliğini artırır.</p>
+                    
+                    <h4>Verimliliği Artırma Çözümleri</h4>
+                    <p>Verimliliği artırmanın yolları arasında üretim sürecini optimize etmek ve hataları erken aşamada tespit etmek yer
+                        alır. Endüstriyel görüntü işleme, bu optimizasyonları mümkün kılar. Üretimde yapay zekanın da etkisiyle, bu
+                        sistemler, hammaddeden son ürüne kadar her aşamada maksimum verimlilik sağlar. Bu durum, üreticilerin piyasa
+                        taleplerine hızlı ve etkili bir şekilde yanıt vermesine olanak tanır.</p>
+                    
+                    <h4>Endüstriyel Görüntü İşlemenin Geleceği</h4>
+                    <p>Endüstriyel görüntü işleme, üretim süreçlerindeki hız ve otomasyonun artırılmasında kritik bir rol oynamaktadır.
+                        Gelecek, bu teknolojinin daha da gelişmesiyle birlikte, yapay zeka ve makine öğrenmesi algoritmalarının entegrasyonu
+                        sayesinde daha akıllı ve daha bağımsız sistemler sunacaktır. Bu sistemler, üretim süreçlerini sadece
+                        otomatikleştirmekle kalmayacak, aynı zamanda kendini sürekli optimize eden ve geliştiren bir yapıya bürünecektir.
+                    </p>
+                    
+                    <h4>Gelecek İçin Stratejik Öneriler</h4>
+                    <p>Yapay Zekayı Entegre Edin: Yapay zekâ tabanlı çözümlere yatırım yaparak sistemlerin öğrenme kapasitelerini artırın.
+                        Veri Analizi Kapasitesini Geliştirin: Büyük veri analiz araçlarıyla süreçlerinizi daha verimli hale getirin. Esnek
+                        Üretim Hatları Kurun: Modüler sistemler ve robotik çözümlerle üretim hatlarınızı daha esnek hale getirin. Çalışan
+                        Eğitimine Yatırım Yapın: Teknolojik yeniliklerin benimsenmesi için çalışanlarınızı sürekli eğitin. Siber Güvenliği
+                        Güçlendirin: Hem veri bütünlüğünü sağlamak hem de üretim süreçlerini koruma altına almak için güvenlik önlemlerini
+                        artırın. Çevreci Teknolojiler Kullanın: Sürdürülebilir üretim için enerji tasarrufu sağlayan çözümleri tercih edin.
+                        İnovasyonu Teşvik Edin: Araştırma ve geliştirme çalışmalarına yatırım yaparak yeni teknolojilerin öncüsü olun.</p>
+                    <p>Bu öneriler doğrultusunda, endüstriyel görüntü işleme teknolojisinin geleceği, sadece endüstriyel üretimde değil,
+                        aynı zamanda günlük yaşamdaki yeniliklerde de etkisini gösterecektir. Özellikle otomotiv, elektronik ve sağlık gibi
+                        sektörlerde, bu teknolojinin getireceği dönüşümler, üretim ve kalite kontrol süreçlerini iyileştirerek rekabet
+                        avantajı sağlayacaktır.</p>
+                    
+                    <h4>Sık Sorulan Sorular</h4>
+                    <p><b>Endüstriyel görüntü işlemenin temel avantajları nelerdir?</b> Endüstriyel görüntü işleme, üretim süreçlerinde
+                        otomasyon, hız, hassasiyet ve tutarlılık sağlar. İnsan hatalarını en aza indirir ve iş gücü maliyetlerini düşürür.
+                    </p>
+                    <p><b>Hangi endüstriler endüstriyel görüntü işleme teknolojilerini kullanır?</b> Endüstriyel görüntü işleme, otomotiv,
+                        elektronik, gıda ve ilaç endüstrileri gibi birçok sektörde yaygın olarak kullanılmaktadır.</p>
+                    <p><b>Endüstriyel görüntü işleme, kalite kontrol süreçlerini nasıl iyileştirir?</b> Bu teknoloji, üretim sırasında
+                        ürünlerin boyut, biçim ve yüzey kalitesini yüksek hassasiyetle inceleyerek kalitesizlik ihtimalini minimize eder ve
+                        toplam kaliteyi artırır.</p>
+                    <p><b>Endüstriyel görüntü işleme sistemlerinin kurulumu zorlu mudur?</b> Kurulum zorluğu, sistemin karmaşıklığına ve
+                        uygulama alanına bağlıdır. Ancak, gelişen teknoloji ile bu süreçler daha kullanıcı dostu hale gelmiştir.</p>
+                    <p><b>Görüntü işleme teknolojisinin üretim maliyetlerine etkisi nedir?</b> Başlangıç yatırımı gerektirse de uzun vadede
+                        üretim hızını artırarak ve insan kaynaklı hataları azaltarak maliyetleri düşürür.</p>
+                    <p><b>Endüstriyel görüntü işleme sistemleri nasıl çalışır?</b> Bu sistemler, kameralar ve görüntü sensörleri
+                        aracılığıyla alınan görüntüleri analiz eder ve yazılım algoritmaları kullanarak belirli özellikleri denetler veya
+                        ölçer.</p>
+                    <p><b>Bu teknoloji, üretim sürecinde insan faktörünü tamamen ortadan kaldırır mı?</b> Endüstriyel görüntü işleme, insan
+                        müdahalesini azaltabilir ancak tamamen ortadan kaldırmaz; insan denetimi ve sistemi izleme her zaman önemlidir.</p>
+                    <p><b>Endüstriyel görüntü işlemenin gelecekteki yenilikleri neler olabilir?</b> Yapay zekâ ve makine öğrenimi
+                        entegrasyonu ile daha akıllı ve özerk sistemler geliştirilecek, dolayısıyla daha karmaşık işlemler de
+                        otomatikleştirilebilecektir.</p>
+                    <p><b>Hangi tür görüntü işleme sistemleri vardır?</b> 2D görüntü işleme, 3D görüntü işleme, termal görüntüleme ve
+                        spektral analiz gibi farklı tür görüntü işleme sistemleri mevcuttur.</p>
+                    
+
+
+                </div>
+
+            </div>
+
+            <!-- END main-content -->
+
+            <div class="col-md-12 col-lg-4 sidebar text-white">
+
+                <!-- END sidebar-box -->
+                <div class="sidebar-box sticky-effectox" style="max-height: 76vh; overflow: hidden;">
+                    <h3 class="heading text-white">Popüler Bloglar </h3>
+                    <div class="post-entry-sidebar">
+                
+                        <ul>
+                            <li>
+                                <a
+                                    href="is-guvenligi-ve-verimlilikte-yapay-zeka-destegi-kkd-kontrolu-insan-tespiti-ve-makine-yonetimi.html">
+                                    <div class=" wow fadeIn" data-wow-delay="0.3s">
+                                        <div class="case-item position-relative overflow-hidden rounded mb-2">
+                                            <img class="img-fluid"
+                                                src="blog/Artificial Intelligence Support in Work Safety and Productivity PPE Control, Human Detection and Machine Management.jpg"
+                                                alt="">
+                                            <a class="case-overlay text-decoration-none"
+                                                href="is-guvenligi-ve-verimlilikte-yapay-zeka-destegi-kkd-kontrolu-insan-tespiti-ve-makine-yonetimi.html">
+                
+                                                <h5 class="lh-base text-white mb-3">İş Güvenliği ve üretkenlik KKD kontrolünde Yapay Zeka Desteği, İnsan 
+                                                    Algılama ve Makine Yönetimi  </h5>
+                                                <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="yapay-zeka-ile-erp-entegasyonu-isletmenizde-verimliligi-nasil-artirabilirsiniz.html">
+                                    <div class=" wow fadeIn" data-wow-delay="0.3s">
+                                        <div class="case-item position-relative overflow-hidden rounded mb-2">
+                                            <img class="img-fluid"
+                                                src="blog/ERP Integration with Artificial Intelligence How to Increase Efficiency in Your Business.jpg" alt="">
+                                            <a class="case-overlay text-decoration-none"
+                                                href="yapay-zeka-ile-erp-entegasyonu-isletmenizde-verimliligi-nasil-artirabilirsiniz.html">
+                
+                                                <h5 class="lh-base text-white mb-3">Yapay Zeka ile ERP Entegrasyonu İşinizde verimliliği Nasıl Artırırsınız  </h5>
+                                                <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                
+                        </ul>
+                    </div>
+                </div>
+                <!-- END sidebar-box -->
+
+            </div>
+            <!-- END sidebar -->
+                <div style="height: 100px;" class="cakinti"></div>
+             <div style="height: 100px;" class="height"></div>
+
+        </div>
+    </div>
+</section>
+
+     
+
+
+
+
+ 
+
+
+    <!-- Newsletter Start -->
+    <div class="container-fluid bg-darkorbit newsletter">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="display-none col-md-5 ps-lg-0 pt-5 pt-md-0 text-start wow fadeIn" data-wow-delay="0.3s">
+                    <img class="img-fluid" src="img/newsletter.png" alt="">
+                </div>
+                <div class="col-md-7  newsletter-text wow fadeIn" data-wow-delay="0.5s">
+                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3">Haber B&#252;lteni</div>
+                    <h1 class="text-white mb-4">Haber B&#252;ltenimize Abone Ol!</h1>
+                    <div class="position-relative w-100 mt-3 mb-2">
+                        <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
+                            placeholder="Mail Adresiniz" style="height: 48px;">
+                        <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
+                                class="fa fa-paper-plane text-primary fs-4"></i></button>
+                    </div>
+                    <small class="text-white-50">Abone olarak gizlilik ve şartlarımızı kabul etmiş olursunuz.</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-primarybit text-white-50 footer pt-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                    <a href="index.html" class="d-inline-block mb-3">
+                        <img style="width: 200px;" src="img/logo.svg" alt="logo">
+                    </a>
+                     
+                </div>
+                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                    <h5 class="text-white mb-4">Pop&#252;ler Linkler</h5>
+                    <a class="btn btn-link" href="hakkimizda.html">Hakkımızda</a>
+                    <a class="btn btn-link" href="iletisim.html">İletişim</a>
+                    <a class="btn btn-link" href="gizlilik.html">Gizlilik Politikası</a>
+                    <a class="btn btn-link" href="sartlar.html">Şartlar &amp; Koşullar</a>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+                    <h5 class="text-white mb-4">&#199;&#246;z&#252;mlerimiz</h5>
+                    <a class="btn btn-link" href="siseleme.html">Şişeleme</a>
+                    <a class="btn btn-link" href="erp-entegrasyonu.html">ERP Entegrasyonu</a>
+                    <a class="btn btn-link" href="Ambalajlama.html">Ambalajlama</a>
+                    <a class="btn btn-link" href="htm.html">Hızlı T&#252;ketim &#220;r&#252;nleri</a>
+                    <a class="btn btn-link" href="hat-takibi.html">Hat Takibi</a>
+                    <a class="btn btn-link" href="isg.html">İş G&#252;venliği</a>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+                    <h5 class="text-white mb-4">İletişime Ge&#231;</h5>
+                    <p><i style="width: 10px;" class="fa fa-map-marker-alt me-3"></i>Ordu, TURKEY</p>
+                    <p><a style="color:#ffffff80; text-decoration:none" href="tel:+905464208480"><i style="width: 10px;"
+                                class="fa fa-phone me-3"></i>0 546 420 84 80</a></p>
+                
+                    <p><a style="color:#ffffff80; text-decoration:none" href="mailto:hello@vercosai.com"><i style="width: 10px;" class="fa fa-envelope me-3"></i>hello@vercosai.com</a></p>
+                    <div class="d-flex pt-2">
+                       <a class="btn btn-outline-light btn-social" href="https://www.x.com/Vercos_AI"><i class="fab fa-x-twitter"></i></a>
+                     
+                        <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/@vercosai"><i class="fab fa-youtube"></i></a>
+                       
+                        <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/company/vercosai"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container wow fadeIn" data-wow-delay="0.1s">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">&#169; <a class="border-bottom" href="https://vercos.ai">VercosAI</a>, T&#252;m Hakları Saklıdır. </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu"><a href="https://vercos.ai/">Ana Sayfa</a>
+                            <a href="https://vercos.ai/cookies.html">&#199;erezler</a>
+                            <a href="https://vercos.ai/iletisim.html">Yardım</a>
+                            <a href="sss.html">S.S.S</a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-dark btn-lg back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
